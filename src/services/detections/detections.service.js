@@ -13,7 +13,7 @@ module.exports = function (app) {
   app.use('/', new Detections(options, app));
 
   // Get our initialized service so that we can register hooks
-  const service = app.service('detections');
+  const service = app.service('');
 
   service.hooks(hooks);
 };
