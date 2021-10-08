@@ -10,7 +10,7 @@ module.exports = function (app) {
   };
 
   // Initialize our service with any options it requires
-  app.use('/detections', new Detections(options, app));
+  app.use('/', new Detections(options, app));
 
   // Get our initialized service so that we can register hooks
   const service = app.service('detections');
